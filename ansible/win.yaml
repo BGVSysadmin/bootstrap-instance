@@ -1,0 +1,5 @@
+- name: Windows Default
+  hosts: win
+
+  roles:
+    - win-default

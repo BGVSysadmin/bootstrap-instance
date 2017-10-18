@@ -1,0 +1,9 @@
+---
+- name: Download
+  win_get_url:
+    url: https://s3.amazonaws.com/ch-temp/test.ps1
+    dest: C:\Users\Admin\test.ps1
+
+
+- name: Run
+  win_shell: C:\Users\Admin\test.ps1 >> c:\Users\Admin\test.ps1.log
